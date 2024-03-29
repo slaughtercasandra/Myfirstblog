@@ -3,59 +3,20 @@
 ##task
 create aa two page website for a blog using javascript, css and html
 
-
 AS A student,
-I WANT a personal blog
-SO THAT I can showcase my thoughts and experiences.
+I WANT my first blog
+SO THAT I can showcase mt skills i have learned.
 ```
 
-## Acceptance Criteria
 
-```md
-GIVEN a personal blog
-WHEN I load the app,
-THEN I am presented with the landing page containing a form with labels and inputs for username, blog title, and blog content.
-WHEN I submit the form,
-THEN blog post data is stored to localStorage.
-WHEN the form submits,
-THEN I am redirected to the posts page.
-WHEN I enter try to submit a form without a username, title, or content,
-THEN I am presented with a message that prompts me to complete the form.
-WHEN I view the posts page,
-THEN I am presented with a header, with a light mode/dark mode toggle, and a "Back" button.
-WHEN I click the light mode/dark mode toggle,
-THEN the page content's styles update to reflect the selection.
-WHEN I click the "Back" button,
-THEN I am redirected back to the landing page where I can input more blog entries.
-WHEN I view the main content,
-THEN I am presented with a list of blog posts that are pulled from localStorage.
-WHEN I view localStorage,
-THEN I am presented with a JSON array of blog post objects, each including the post author's username, title of the post, and post's content.
-WHEN I take a closer look at a single blog entry in the list,
-THEN I can see the title, the content, and the author of the post.
-WHEN I view the footer,
-THEN I am presented with a link to the developer's portfolio.
-```
+## Summary
+the first page has a form to enter information that will be added and shown onto the next page when i hit submit
+the second form displays the informatin i entered on the first page. Also had a back button to go back
+each page has a sun button that  will toggle the screen from dark and light mode with css and JS functions
 
-## Getting Started
 
-Your file structure should look like the following:
+### Basic example and refrance link
+/Users/cassieslaughter/Downloads/bootcamp/RICE-VIRT-FSF-PT-02-2024-U-LOLC/01-Class-Content/04-Web-APIs/02-Challenge/Assets/100-web-apis-challenge-demo.gif
 
-```md
-my-blog
-├── assets
-│   ├── css
-│   │   ├── blog.css
-│   │   ├── form.css
-│   │   └── styles.css
-│   └── js
-│       ├── blog.js
-│       ├── form.js
-│       └── logic.js
-├── index.html
-├── blog.html
-└── README.md
-```
-
-## Mock-Up
-
+image link
+data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAMAAzAMBEQACEQEDEQH/xAAaAAEBAAMBAQAAAAAAAAAAAAAAAQIDBQQH/8QAMhABAAIBAgQEBAQGAwAAAAAAAAECAwQRBSExQRJRYXETIjJCNJGhsVJTcoGSwRQkM//EABsBAQACAwEBAAAAAAAAAAAAAAABBQMEBgIH/8QANBEBAAICAQMCAwYFAwUAAAAAAAECAwQRBRIxIUEGUXETMmGRodEUIkKBsRbB8CM0UpLh/9oADAMBAAIRAxEAPwD7QAAACAAASDHfnttJyMb3iv1TFfeWHJnx4o5vaIeopafENF9Vhr9+/srsnW9LH/Vz9GaNe8tc67F2raWnf4l1q+KzLJGrZj/zqfwWY/8AU+D/AMJT/CT81jXYu8Whkr8S6s+YmETqW+bZXV4p+/b3buLrelk/r4+rHOveG6uSLRymJ9llizYsv3LRP92GaTHllEsnLyoAAAAAAGwGwNgAAAAAMd0TPCYebNq8eLfn458oU+51vW1uaxPdP4NimCbPHl1mXJ9M+CvlDl9rr21mnis9sfg2aYKV8vNMzb6p391NfJe882mZlsREQjwkOQORDmQTzM+UkTNZ3rMxPpL1TJek81nhExE+W/FrctJ2tPij1Xep17aw8d890fj5/NgvrUt49HvwazFk5b7W8pdTpdZ1tr+Xntt8paWTXvT19noid+i29uWAAAAAAABtBAAAAa82WmKsze20NXa28WrTvyTw90pN54hzM+rvl3is+Gvp3cR1DrmfZma457a/r/dv48FaeXmUfLYARCQAAABKUEJIlJhPI9Wn12TDyvvenr1h0Gh13Prz25f5q/rH/Pxa2XWrf1j0l08WWuWvixzFon9Haa+zi2ad+OeYV96WpPEs2w8AAAAANoAIADTqdRXBXeedp6Qreo9Sx6WPut6z7R82bHim8uTmy3y38V5fPdvcy7eSb5JWNKRWOIa2q9gAAAIJAAAEpQQAkwJZYct8F4vinb07S3dPdy6mTvxy8Xx1vHEuxptRTUUi1eU948n0DQ6hi3cfdXz7x8lXlxTjn18NywYiQQAAG0AAGnU5q4Mfinr2jzaPUN7HpYu+/n2j5suLHN7cORlyWy3m1p3mXzfa2smzknJkn1lZUrFY4hg1ntEgAAAAACCQAAEEiUJsJZYr3xZIvSecfq2tbaya2SMmOeJeL0reOJdrT5qZ8cWr17x5Po2jvY9zDGSvp84+SqyY5pbiWxusYAADYACWmK1mZ5RHV4yXrSk2t4hMRzPDjarNOfJNvtjlEPmvVN+25nm/9MeFpixxSvDSrWVAEgAAAAAAACCQAEEiUANulz2wZd/tn6oWXTd+2nmi39PvDHlxxkrw7UWi1YmOk9H0mmSuSsXrPMSqOJj0kegABsAB4eJZtojDWec85cp8R7/ZWNak+fWW3q4/6pc5xkt5EJARIAAAAAAAAAgkAAEokJTEodHhmaZrOG3WvOvs7L4c3u+s69vbx9Gjt4+J74e91TSQAGwCZisTaekRu8ZLxSk2n2TEczw4Wa85Mtrz3nd8t3Ni2zmtlt7ytcde2vDBqvYJSQEgAAAAAAAACCQAAAESMsWS2LJW9eza09i2vnrlj2eb17o4d2Ji1YmvSecPqGO8XrFq+J9VPMcTwr2gBmDzcRyeDTetp2UXxBsfZafbHmzY1683ch8+5WIhIACAAJAAAAAAAAEEqCAAJElNR1uG5PHpojfnWdnf/D+x9rqRSfNfRW7VOL8vUvWsAz2BzeK23yY6+Uby4n4oy85qY/lHP5t7Vj05eFyzcBAAJAARIAAAAAAAAAAgkAAlI9nCr7ZbUnpMbun+Gc3bmtjn3hqbdea8um7ZXgNgOPxCd9Xb0iP2fO+v37t68fLiP0WWvH/Th5lI2CBCgAgAkABEgAAAAAAACCQACQb9FPh1VPXktuiZJpvY/wAfRhzxzjl2H0hVANgOLrfxWT3fNutf9/l+v+0LTB9yGhUsxAhQQASAAAAAiQAAAAABABJAhZEs9N+Ix/1N/ps8beP6wx5fuS7k9X09UIDYDja+P+3k/t+z5v1yON/J/b/ELPB9yHnVDMoAAICggkABAWQRIAAAAAgKCQCyJbNL+Jx+7f6ZHO5jj8WPL9yXbfT1QAzByeJ121O/nVwXxJTt3O75xCx1Z5o8kOdbCgAAAAAgkAABEgAAAAAAABIlv0FfFqqenNc9Cx9+9X8PVg2Z4xy7D6KqwGYOfxWny47xz23hyXxPh5pTLH0bmrPEzDnONbqgAAAAAgKCCQAEAASAAAAAEpHu4VTe97z2jZ1Pwxh5yXyz7ejU27ekVdF2jQAZg0azH8TTWjyjeFZ1fX+307x7+fyZcNu28ON2fNJhaCAAAAAAABBIACSAkAAAAAAEjr8Px/D01ZnrbnL6J0HX+y04tPm3qrNi/dd6FywAMwAcTVY5w57U7b7x7PmPVNWdXZtj9vMfRaYr99IlqVzKAAAAAAAgkABJASAAAAAANmnx/Fy1p59fZu6GrOzsVx/Pz9PdjyW7a8u5tEcofUK1itYiPZUzPMiRAZgA8nEcPxMXjiPmp+zn/iDQ/iMH2tY/mr/j3bGvk7bcT4cpwErEAAAAAABBIAAACAJAAABMeR0+G4PDj+JaOduns7j4d0PssX29o9bePor9nJzPbD2ulaoCAzAARMew5Gu084cnjr/52/SXz7rfTJ1MvfX7lv0/BY4MvfHE+XmUXDYAAAAAAQASAAAgCQAASN+kwTny7fbHOVr0np07ubifux5/ZhzZIpV2dto5fk+j1itY4r4VfPM8iQABkAADDJjrkpNLxylg2MFM+Ocd49Jeq2ms8w4+pwWwX2np2nzfOeo9OyaWTtt6x7SssWSLw1K2Y4ZRAAJAAAEAEgAAIkAEjPFjtlvFKdZbenp5NrLGPHH/AMeL3ikcy7ODDXBjilevefN9H09THqYox0/P5qvJeb25lsbbwAAAyAAABhlx1y1mt43iWvs6uLZxzjyRzD1W00nmHJ1Omvgmfup2s+f9S6Tl07c+a+0/uscWWL/VoVEswgUEASAAIAJAAQBIyx47ZLxSkTMy3tLRy7mTsxx9Z+THe8UjmXY0unrgpt1tPWX0HR0MWlj7aR58z81bkyzeW+W+xoAAADIAAAAEmItExMbxLxekXjttHMJiePDwajQdbYP8Z/05TqPw7P39X/1/Zt49mPF3gtW1LeG0TE+rksmK+O3beOJbkTEwMSQESAAAJIAkAlMRz6IbdPpr57fLX5e9p6Oh6d0HLscXzfy1/Wf2YMmeK+HW0+npgrtXr3mesu219bHrUimOOIaF7zeeZbWd4AQAAAGQKAACAAA15cNM0bXrEtXZ0sG1Xty15e63tTw8Obh9o54Z3jyly238M3j117c/hP7tqm1E/eeS9L0+ulo942c9saWxgnjJSYbNbxbxLBpvYkAASQOTLiw3yTxSsz9ETPDZjwZMs7UpaY8+kLzV+HtrNPOT+WP1Yr561e/Bw+tfmy/NPk6nS6RravrEcz85amTYtbw9kREcq1iI9Fq11AAABJAABkCgAgAAAAAJaInlMRPvCJjmOJTE8eGi+jw3+3w+sNLN03Uzet8cf4ZK5bx7tF+HV+zJt7w0L/D2lbxEx/dkjZtHlhPDbfzI/Ji/01qfOXr+Kkjhtu94/J7r8OacfP8AMnalsrw6kfVeZbWPo2ljn0p/uxzsWlvx6TDj5xSJn1WNMVKelY4/sxzktPmW6IiI5QyPCggAAAAAIAD/2Q==
