@@ -6,29 +6,15 @@ function setDark() {
     console.log ("toggle button click")
     body.classList.toggle('darkmode');
 }
-
-
-// add event listeners to the on change event
-
-
-// create a function 
-// const onchange = (event) => {
-
-// } // this function is acting as an event listener
-
-// when a user changes the input field, the title will change
-
-
-
  
 const title = document.getElementById('title');
 const name = document.getElementById('name');
 const content = document.getElementById('content');
 const button = document.getElementById('button')
-
+// make button sumbit to next page
 button.addEventListener( "click" , (event) => {
     console.log("title has changed")
-    const blog ={ title: title.value , name:name.value , content:content.value 
+    const blog ={ title: title.value , name: name.value , content: content.value 
     }
     const storage=JSON.parse(localStorage.getItem("blogs")) || []
    storage.push(blog)
@@ -37,6 +23,5 @@ button.addEventListener( "click" , (event) => {
 localStorage.setItem("blogs" , JSON.stringify(storage))
 window.location="blog.html"
 }
-
 )
 
