@@ -1,11 +1,6 @@
-.box{
-    display:flex;
-    border:black 2px;
-
-}
 
 .title{  
 font-size: 20px;
-color: black;
+color: rgb(180, 49, 49);
 }
 

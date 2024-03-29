@@ -27,3 +27,15 @@ window.location="blog.html"
 }
 )
 
+
+// //make img change colors when clicked 
+// switchCol.addEventListener('lcick', function(vent)
+// {const checked = event.target.dataset.color;
+//     if (checked==="light"){
+//         document.querySelector('.darkspan').computedStyleMap.displsy="none";
+//         document.querySelector('.lightspan').computedStyleMap.displsy="block";
+//         event.target.dataset.color="dark";
+
+
+        
+
