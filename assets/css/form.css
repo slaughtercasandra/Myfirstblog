@@ -1,0 +1,11 @@
+.box{
+    display:flex;
+    border:black 2px;
+
+}
+
+.title{  
+  font-size: 20px;
+color: black;
+}
+

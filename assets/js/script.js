@@ -1,4 +1,5 @@
 
+// what to make the sun change the page from dark to light mode
 const toggle = document.getElementById('toggle');
 const body = document.querySelector('body')
 
@@ -7,6 +8,7 @@ function setDark() {
     body.classList.toggle('darkmode');
 }
  
+
 const title = document.getElementById('title');
 const name = document.getElementById('name');
 const content = document.getElementById('content');
