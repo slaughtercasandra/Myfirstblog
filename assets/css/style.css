@@ -50,19 +50,21 @@ h1 {
 .container {
   display: flex;
   width: 100%;
-  /* border-: 10px double black; */
+  height:100vh;
 }
 
-img{
-  text-align: center;
-  margin:0%;
+.halfleft{
+border:none;
+flex: 1;
 }
+
 .half {
   flex: 1;
-  /* border-style: solid; */
+  border-left: 10px double black;
 }
 
-form {
+form {  
+  display: table-column;
   padding: 10px;
   margin-left: 25px;
   display: flex;

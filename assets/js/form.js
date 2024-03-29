@@ -1,8 +1,15 @@
 //Retrieve projects from localStorage and parse the JSON to an array. If there are no projects in localStorage, initialize an empty array and return it.
+  //  Create a new div class for the article continers with create element and create class
+  const toggle = document.getElementById('toggle');
+const body = document.querySelector('body')
+
+  function setDark() {
+    console.log("toggle button click")
+    body.classList.toggle('darkmode');
+  }
 
 
-
-const storage=JSON.parse(localStorage.getItem("blogs")) || []
+  const storage=JSON.parse(localStorage.getItem("blogs")) || []
 console.log(storage);
 for (let i=0; i<storage.length;i++) {
     const blog=storage[i]
@@ -32,6 +39,4 @@ name.innerText=blog.name
 container.appendChild(name)
 document.getElementById("blog").appendChild(container)
 }
-
-
 
