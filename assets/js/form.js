@@ -8,7 +8,6 @@ const body = document.querySelector('body')
     body.classList.toggle('darkmode');
   }
 
-
   const storage=JSON.parse(localStorage.getItem("blogs")) || []
 console.log(storage);
 for (let i=0; i<storage.length;i++) {
@@ -24,12 +23,10 @@ container.appendChild(title)
 
 
 
-
 const content=document.createElement("p")
 title.classList.add("content")
 content.innerText=blog.content
 container.appendChild(content)
-
 
 
 
